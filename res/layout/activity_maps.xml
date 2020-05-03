@@ -14,70 +14,60 @@
         android:name="com.google.android.gms.maps.SupportMapFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".MapsActivity" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="CRNT LCTN"
-        android:id="@+id/btn_crnt"/>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Latitude: "
-        android:layout_toRightOf="@+id/btn_crnt"
-        android:gravity="center"
-        android:textSize="20sp"
-        android:id="@+id/latitude"/>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Here is latitude"
-
-        android:layout_toRightOf="@+id/latitude"
-        android:textSize="20sp"
-        android:id="@+id/lat_value"/>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Longitude: "
-        android:layout_toRightOf="@+id/btn_crnt"
-        android:layout_marginTop="25dp"
-
-        android:gravity="center"
-        android:textSize="20sp"
-        android:id="@+id/longitude"/>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Here is longitude"
-
-        android:layout_marginTop="25dp"
-        android:layout_toRightOf="@+id/longitude"
-        android:textSize="20sp"
-        android:id="@+id/lon_value"/>
-
-    <EditText
-        android:id="@+id/editText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Bogura"
-        android:layout_marginTop="45dp"/>
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_weight="0.5"
-        android:onClick="searchLocation"
-        android:text="Search"
+        tools:context=".MapsActivity"
         android:layout_marginTop="45dp"
-        android:layout_toRightOf="@+id/editText"/>
-    />
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/location_search"
+            android:layout_width="314dp"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:ems="10"
+            android:hint="Search here"
+            />
+        <ImageButton
+            android:id="@+id/btn_search"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:onClick="onClick"
+            android:src="@drawable/ic_search_black_24dp"
+            />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/secon_relative_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/hospitals_nearby"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="188dp"
+            android:layout_marginLeft="188dp"
+            android:layout_alignParentBottom="true"
+            android:onClick="onClick"
+            android:src="@drawable/ic_local_hospital_black_24dp" />
+
+    </RelativeLayout>
+
 
 
 </RelativeLayout>
