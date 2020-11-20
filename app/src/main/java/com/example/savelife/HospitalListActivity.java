@@ -29,7 +29,7 @@ public class HospitalListActivity extends AppCompatActivity {
             "Ambulance Available","Ambulance Available",
             "Ambulance Available","Ambulance Unavailable"
     };
-
+// sometimes git not working in android studio
     Integer[] imgid={
             R.drawable.im1,R.drawable.im2,
             R.drawable.im1,R.drawable.im1,
